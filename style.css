@@ -201,11 +201,17 @@ a {
   width: 37%;
   font-weight: bolder;
   border: 2px solid #909e6c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
+  padding-top: 13px;
+  text-align: center;
   margin-top: 30px;
+}
+#learnMore:hover{
+  background-color: #4d5a2f;
+  color: white;
+  cursor: pointer;
+}
+#learnMore a:hover{
+color: white;
 }
 #freshlooks {
   height: 750px;
@@ -243,6 +249,7 @@ a {
 #freshlooks img {
   height: 370px;
   width: 370px;
+  cursor: pointer;
 }
 #Latestprojects {
   height: 850px;
@@ -362,10 +369,10 @@ a {
   font-weight: bold;
   letter-spacing: 2px;
 }
-#contactUs > form > button:hover {
+/* button:hover {
   cursor: pointer;
   background-color: black;
-}
+} */
 #contactparttext {
   height: 150px;
   width: 100%;
