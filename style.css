@@ -55,8 +55,10 @@
   align-items: center;
   font-size: 25px;
 }
-#applogo i:nth-child(1) {
+#bars{
   cursor: pointer;
+  font-size: 25px;
+  display: none;
 }
 #applogo i:nth-child(2) {
   font-size: 25px;
@@ -119,6 +121,12 @@
   padding-top: 5px;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition-duration: 0.3s;
+}
+#cookies2:hover{
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
 }
 #main {
   height: 840px;
@@ -227,7 +235,7 @@ color: white;
 }
 #number {
   height: 180px;
-  width: 16%;
+  width: 35%;
   /* border: 1px solid red; */
   color: white;
   background-color: #6a7c3e;
@@ -235,7 +243,7 @@ color: white;
   padding-top: 50px;
 }
 #freshlooksoutdiv h1 {
-  font-size: 48px;
+  font-size: 50px;
   margin-left: 60px;
 }
 #images {
@@ -244,6 +252,7 @@ color: white;
   margin: auto;
   /* border: 1px solid green; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 #freshlooks img {
@@ -307,6 +316,9 @@ color: white;
   display: flex;
   justify-content: space-between;
 }
+#freshlooksoutdiv2 h1 {
+  font-size: 48px;
+}
 #contactpart {
   height: 705px;
   width: 100%;
@@ -359,7 +371,7 @@ color: white;
   border-radius: none;
   outline: none;
 }
-#contactUs > form > button {
+#contactUs > form >button {
   width: 100%;
   height: 50px;
   border: none;
@@ -369,10 +381,10 @@ color: white;
   font-weight: bold;
   letter-spacing: 2px;
 }
-/* button:hover {
+button:hover {
   cursor: pointer;
   background-color: black;
-} */
+}
 #contactparttext {
   height: 150px;
   width: 100%;
@@ -439,4 +451,115 @@ color: white;
 #footerend a:hover {
   text-decoration: none;
   opacity: 0.6;
+}
+@media screen and (max-width:1115px) {
+  #bars{
+  cursor: pointer;
+  font-size: 25px;
+  display: inline;
+}
+#applogo>i:nth-child(1){
+  display: none;
+}
+#main3 {
+  grid-column: 5/10;
+  grid-row: 4/10;
+}
+#main2 {
+  grid-column: 6/11;
+  grid-row: 3/11;
+}
+#interior1 {
+  grid-column: 2/6;
+  grid-row: 1/6;
+}
+#interior2 {
+  grid-column: 6/11;
+  grid-row: 1/6;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+#interior3 {
+  grid-column: 8/11;
+  grid-row: 1/5;
+}
+#interior4 {
+  grid-column: 2/6;
+  grid-row: 6/9;
+  margin-top: 10px;
+}
+#interior5 {
+  grid-column: 7/11;
+  grid-row: 6/11;
+}
+#number {
+  width: 45%;
+}
+#freshlooksoutdiv h1 {
+  font-size: 46px;
+}
+#interior {
+  height: 900px;
+}
+}
+@media screen and (max-width:991px) {
+  .img11, .img12{
+    display: none;
+  }
+  #main3 {
+    grid-column: 3/8;
+    grid-row: 3/9;
+  }
+  #main2 {
+    grid-column: 4/9;
+    grid-row: 2/10;
+  }
+  #interior {
+    height: 1800px;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    grid-template-rows: repeat(18, 100px);
+  }
+  #interior1 {
+    grid-column: 2/10;
+    grid-row: 1/8;
+  }
+  #interior2 {
+    grid-column: 2/8;
+    grid-row: 11/17;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  #interior3 {
+    grid-column: 4/9;
+    grid-row: 11/15;
+  }
+  #interior4 {
+    grid-column: 2/10;
+    grid-row: 8/11;
+    margin-top: 10px;
+  }
+  #interior5 {
+    grid-column: 2/10;
+    grid-row: 17/19;
+  }
+  #interior5 p {
+    padding-top: 0px;
+  }
+  #number {
+    width: 70%;
+  }
+  #freshlooksoutdiv h1 {
+    font-size: 44px;
+  }
+  #freshlooksoutdiv {
+    width: 78%;
+  }
+  #images {
+    height: 800px;
+    width: 78%;
+  }
 }
