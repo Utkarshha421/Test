@@ -1,0 +1,591 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#navbar {
+  height: 70px;
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#device {
+  width: 17%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 100px;
+}
+#img1 {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+#img1:hover {
+  background-color: #dcf0ff;
+  cursor: pointer;
+}
+#meatBgImg {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  /* border: 2px solid black; */
+}
+#meatBgImgleft {
+  height: 600px;
+  width: 45%;
+  /* border: 2px solid red; */
+  background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/be4268f15125547f891f37c9/pexelsphoto3659861.jpeg");
+  background-size: cover;
+}
+.logo {
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-around;
+}
+.logo i {
+  color: white;
+  margin-top: 20px;
+  font-size: 30px;
+  visibility: hidden;
+}
+.logo img {
+  height: 30px;
+  width: 65px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#meatBgImgright {
+  height: 600px;
+  width: 45%;
+  /* border: 2px solid red; */
+  background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/b997f5453a025796b7e011f6/pexelsphoto3659862.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+}
+.home {
+  text-align: end;
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: end;
+  color: white;
+  padding: 30px 100px 0px 0px;
+}
+.home h4:hover{
+  cursor: pointer;
+  color: #292930;
+}
+.home i {
+  font-size: 30px;
+  visibility: hidden;
+}
+#meatBgImgtext {
+  height: 600px;
+  width: 18%;
+  /* border: 2px solid green; */
+  background-color: #fcc133;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+}
+.text h1 {
+  font-size: 48px;
+}
+#HealthyRecipes {
+  /* border: 1px solid red; */
+  background-color: #292930;
+  display: flex;
+  justify-content: space-evenly;
+}
+#HealthyRecipesText {
+  height: 350px;
+  /* border: 1px solid white; */
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+  align-items: end;
+  margin: 50px 0px;
+}
+#HealthyRecipesImg1 {
+  height: 400px;
+  /* border: 1px solid white; */
+  width: 18%;
+  background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/92f406930ec8505e8860c713/pexelsphoto416471.jpeg");
+  background-size: cover;
+  margin: 50px 0px;
+}
+#HealthyRecipesText2 {
+  height: 500px;
+  /* border: 1px solid white; */
+  width: 28%;
+  background-color: #fcc133;
+  padding: 100px 30px;
+  line-height: 30px;
+}
+#BreakfastIdeas {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/8cc4cc79b3e85baf8723f998/pexelsphoto1639563.jpeg");
+  background-size: cover;
+  text-align: center;
+}
+#BreakfastIdeasText1 {
+  height: 340px;
+  width: 25%;
+  /* border: 1px solid white; */
+  outline: 6px solid #fcc133;
+  margin: 70px 0px 30px 120px;
+  background-color: black;
+  color: white;
+  padding: 50px 30px;
+}
+#BreakfastIdeasText1 h4,
+#BreakfastIdeasText2 h4 {
+  line-height: 30px;
+}
+#BreakfastIdeasText1 a {
+  color: white;
+  letter-spacing: 2px;
+}
+#BreakfastIdeasText2 {
+  height: 340px;
+  width: 26%;
+  /* border: 1px solid white; */
+  margin: 0px 0px 50px 115px;
+  background-color: #fcc133;
+  padding: 50px 30px;
+}
+#BreakfastIdeasText2 a {
+  color: black;
+  letter-spacing: 2px;
+}
+#FreshFoodCafe {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  background-color: #292930;
+  color: white;
+  align-items: center;
+}
+#FreshFoodCafeText {
+  /* border: 1px solid white; */
+  height: 360px;
+  width: 42%;
+  margin: 50px;
+  padding: 50px;
+}
+#FreshFoodCafeText h1 {
+  font-size: 48px;
+}
+#FreshFoodCafeText i {
+  font-size: 25px;
+  padding-right: 15px;
+  color: #fcc133;
+  cursor: pointer;
+}
+#MenuImg img {
+  height: 70px;
+  width: 70px;
+  /* border: 1px solid yellow; */
+}
+#SpecialImg img {
+  height: 60px;
+  width: 60px;
+  /* border: 1px solid yellow; */
+}
+#DrinksImg img {
+  height: 60px;
+  width: 60px;
+  /* border: 1px solid yellow; */
+}
+#TastiestFood {
+  height: 600px;
+  /* border: 1px solid black; */
+  background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/808f86fbe4b25bd1830f78a5/pexelsphoto842142.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+#TastiestFoodText {
+  height: 200px;
+  width: 50%;
+  /* border: 2px solid white; */
+  text-align: right;
+  color: white;
+  margin-right: 100px;
+}
+#TastiestFoodText h1 {
+  font-size: 48px;
+}
+#TastiestFoodText h4 {
+  padding-left: 70px;
+}
+#ReviewDiv {
+  /* border: 1px solid red; */
+  display: flex;
+}
+#ReviewDivImg {
+  height: 650px;
+  /* border: 1px solid black; */
+  width: 50%;
+  background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/fc3e1ec09fae54b78a04eeab/pexelsphoto2641886.jpeg");
+  background-size: cover;
+  background-position: bottom;
+}
+#ReviewDivText {
+  height: 650px;
+  width: 50%;
+  /* border: 1px solid black; */
+  background-color: #292930;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Review {
+  width: 60%;
+  /* border: 1px solid white; */
+  text-align: center;
+}
+#Review h1 {
+  font-size: 48px;
+}
+#Review i {
+  font-size: 60px;
+  color: #fcc133;
+  padding: 20px;
+}
+#Review h4 {
+  line-height: 30px;
+}
+#Review h3 {
+  line-height: 70px;
+}
+#Address {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #292930;
+}
+#AddressText {
+  height: 300px;
+  width: 30%;
+  /* border: 1px solid white; */
+  margin-top: 60px;
+  color: white;
+  padding-top: 80px;
+  margin-left: 50px;
+}
+#AddressText h3 {
+  margin-top: 30px;
+}
+#AddressImg {
+  height: 300px;
+  width: 20%;
+  /* border: 1px solid white; */
+  background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/a28f0233ed8852e8887c9206/pexelsphoto262945.jpeg");
+  background-size: cover;
+  background-position: right;
+  margin-top: 60px;
+}
+#ContactUs {
+  height: 400px;
+  width: 30%;
+  /* border: 1px solid white; */
+  background-color: #fcc133;
+  padding: 100px 30px;
+}
+#ContactUs h1 {
+  font-size: 48px;
+  padding-bottom: 40px;
+}
+#ContactUs p {
+  line-height: 30px;
+}
+#footer{
+  background-color: #333333;
+  height: 100px;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer a{
+color: #92cccc;
+}
+#footer a:hover{
+text-decoration: none; 
+color: white;
+ }
+
+
+@media screen and (max-width: 1024px) {
+  #HealthyRecipesText2 {
+    height: 400px;
+    width: 33%;
+    padding: 30px 10px;
+    font-size: 16px;
+    margin: 50px 0px;
+  }
+  #HealthyRecipesText {
+    width: 28%;
+    font-size: 14px;
+  }
+  #HealthyRecipesImg1 {
+    height: 250px;
+    width: 20%;
+    margin: 100px 0px;
+  }
+  #BreakfastIdeasText1 {
+    width: 39%;
+  }
+  #BreakfastIdeasText2 {
+    width: 40%;
+  }
+  #FreshFoodCafeText {
+    /* border: 1px solid white; */
+    height: 400px;
+    width: 54%;
+    margin: 50px;
+    padding: 50px;
+  }
+  #TastiestFoodText {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 766px) {
+  .home i {
+    visibility: visible;
+  }
+  .home {
+    visibility: hidden;
+  }
+  #HealthyRecipesText2 {
+    height: 450px;
+    width: 45%;
+    font-size: 15px;
+    padding: 60px 30px;
+    margin: 0px 0px;
+    line-height: 30px;
+  }
+  #HealthyRecipesText {
+    width: 22%;
+    font-size: 14px;
+  }
+  #HealthyRecipesImg1 {
+    height: 200px;
+    width: 20%;
+    margin: 100px 0px;
+  }
+  #BreakfastIdeasText1 {
+    width: 50%;
+  }
+  #BreakfastIdeasText2 {
+    width: 52%;
+  }
+  #FreshFoodCafe {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #292930;
+    color: white;
+    align-items: center;
+  }
+  #FreshFoodCafeText {
+    height: 500px;
+    text-align: center;
+    margin: 0px;
+  }
+  #MenuImg {
+    height: 100px;
+    width: 15%;
+    /* border: 1px solid red; */
+    margin-right: 100px;
+  }
+  #SpecialImg {
+    height: 100px;
+    width: 15%;
+    /* border: 1px solid red; */
+    margin-right: 100px;
+  }
+  #DrinksImg {
+    height: 100px;
+    width: 15%;
+    /* border: 1px solid red; */
+    margin-right: 0px;
+  }
+  #TastiestFood {
+    background-position: right;
+  }
+  #TastiestFoodText {
+    height: 250px;
+    width: 90%;
+    margin-right: 0px;
+  }
+  #TastiestFoodText h4 {
+    padding-right: 50px;
+  }
+  #AddressText {
+    height: 300px;
+    width: 30%;
+    margin-left: 20px;
+  }
+  #AddressImg {
+    height: 250px;
+    width: 25%;
+  }
+  #ContactUs {
+    height: 400px;
+    width: 40%;
+  }
+  #ContactUs h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #meatBgImg {
+    height: 950px;
+    width: 100%;
+    flex-direction: column;
+  }
+  #meatBgImgleft {
+    height: 250px;
+    width: 100%;
+    background-position: center;
+  }
+  #meatBgImgtext {
+    height: 250px;
+    width: 100%;
+  }
+  .text {
+    margin-top: 20px;
+  }
+  .text h1 {
+    font-size: 36px;
+  }
+  #meatBgImgright {
+    height: 450px;
+    width: 100%;
+    background-position: bottom;
+  }
+  .logo i {
+    visibility: visible;
+  }
+  .home i {
+    display: none;
+  }
+  #HealthyRecipes {
+    flex-direction: column;
+  }
+  #HealthyRecipesText {
+    height: 150px;
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px 30px 50px 20px;
+  }
+  #HealthyRecipesImg1 {
+    height: 320px;
+    width: 40%;
+    margin: auto;
+  }
+  #HealthyRecipesText2 {
+    height: 250px;
+    width: 90%;
+    margin: 50px 20px 0px 20px;
+    padding: 30px 30px;
+    text-align: center;
+  }
+  #BreakfastIdeasText1 {
+    width: 60%;
+  }
+  #BreakfastIdeasText2 {
+    width: 61%;
+  }
+  #FreshFoodCafe {
+    flex-direction: column;
+  }
+  #FreshFoodCafeText {
+    width: 80%;
+  }
+  #MenuImg {
+    width: 120px;
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+  #SpecialImg {
+    width: 120px;
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+  #DrinksImg {
+    width: 120px;
+    margin-top: 50px;
+  }
+  #TastiestFoodText {
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+  }
+  #ReviewDiv {
+    flex-direction: column;
+  }
+  #ReviewDivImg {
+    height: 360px;
+    width: 100%;
+  }
+  #ReviewDivText {
+    height: 360px;
+    width: 100%;
+  }
+  #Review {
+    width: 100%;
+    padding: 30px 50px 0px 50px;
+  }
+  #Address {
+    flex-direction: column;
+  }
+  #AddressText {
+    height: 250px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  #AddressImg {
+    height: 250px;
+    width: 40%;
+    margin: auto;
+  }
+  #ContactUs {
+    height: 250px;
+    width: 80%;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 50px 30px 0px 50px;
+  }
+  #ContactUs h1 {
+    font-size: 36px;
+  }
+}
